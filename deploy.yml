@@ -1,6 +1,7 @@
 ---
 - name: Deploy Docker Container
   hosts: localhost
+  connection: local
   become: true
   tasks:
     - name: Stop existing container
