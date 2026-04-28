@@ -25,7 +25,7 @@ pipeline {
             steps {
                 // This assumes your playbook is in the repo root
                 // Note: Ensure the 'jenkins' user has ssh access to the target
-                sh "ansible-playbook -i localhost, deploy.yml"
+                sh "ansible-playbook -i localhost, deploy.yml -c local"
             }
         }
     }
